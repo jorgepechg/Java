@@ -5,6 +5,9 @@
  */
 package holamundo1;
 
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jorge
@@ -45,11 +48,64 @@ public class HolaMundo1 {
         //En los datos no primitivos puedes utilizar metodos 
         
         String palabra = "holi beibi"; //en cadenas utilizamos comillas dobles
-                
-        System.out.println("Numero entero: "+palabra);
         
+        //Constantes
+        
+        final int numeroc = 10; //agregamos final 
         
                 
+        System.out.println("Numero entero: "+numeroc);
+        
+        Scanner entrada = new Scanner(System.in);
+        float cosi;
+        
+        System.out.println("Digite un numero: ");
+        cosi = entrada.nextFloat();
+        
+        System.out.println("El numero es: "+cosi);
+        
+        Scanner entrada1 = new Scanner(System.in);
+        String coli;
+        
+        System.out.println("Digite una palabra: ");
+        coli = entrada.next();//next guarda una cadena hasta que encuentre un espacio
+        
+        System.out.println("Su palabra es: "+coli);
+        
+        Scanner entrada2 = new Scanner(System.in);
+        char coliu;
+        
+        System.out.println("Ingrese su letra: ");
+        coliu = entrada2.next().charAt(0);
+        
+        System.out.println("Su letra es: "+coliu);
+        
+        Scanner entrada3 = new Scanner(System.in);
+        String colo;
+        
+        System.out.println("Digite su frase");
+        colo = entrada3.nextLine();
+        
+        System.out.println("Su frase es:"+colo);
+        
+        String lumia;
+        int lumia0;
+        char lumia1;
+        double lumia2;
+        float lumia3;
+        
+        lumia = JOptionPane.showInputDialog("Digite su slogan: ");
+        lumia0 = Integer.parseInt(JOptionPane.showInputDialog("Digite su numero 1: "));
+        lumia1 = JOptionPane.showInputDialog("Digite su letra: ").charAt(0);
+        lumia2 = Double.parseDouble(JOptionPane.showInputDialog("Digite su numero 2: "));
+        lumia3 = Float.parseFloat(JOptionPane.showInputDialog("Digite su numero 3: "));
+        
+        JOptionPane.showMessageDialog(null, "Su Slogan es: "+lumia);
+        JOptionPane.showMessageDialog(null, "Su numero 1 es: "+lumia0);
+        JOptionPane.showMessageDialog(null, "Su letra es: "+lumia1);
+        JOptionPane.showMessageDialog(null, "Su numero 2 es: "+lumia2);
+        JOptionPane.showMessageDialog(null, "Su numero 3 es: "+lumia3);
+        
  
     }
     
