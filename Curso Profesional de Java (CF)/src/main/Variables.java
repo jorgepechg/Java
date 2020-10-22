@@ -57,12 +57,8 @@ public class Variables {
 		System.out.println(letra);
 		System.out.println(aNumerico);
 		
-		boolean valor1 = true;
-		boolean valor2 = false;
-		
-		/*Declarar varias variables en una línea,
-		 * solo es posible cuando los datos son del mismo tipo
-		 */
+		//Declarar varias variables en una línea.
+		//solo es posible cuando los datos son del mismo tipo
 		
 		int variable1 = 1,variable2 = 2,variable3 = 3;
 		
@@ -70,7 +66,7 @@ public class Variables {
 		System.out.println(variable2);
 		System.out.println(variable3);
 		
-		//constantes
+		//constantes.
 		//hacemos uso de la palabra reservada: final
 		//el valor solo se podrá asignar una sola vez
 		
@@ -79,7 +75,6 @@ public class Variables {
 		
 		System.out.println(pi);
 	
-		
 	}
 
 }
