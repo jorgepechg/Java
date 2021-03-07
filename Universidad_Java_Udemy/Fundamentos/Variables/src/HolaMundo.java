@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-//Mi clase en Java
+//Mi clase en Java //VARIABLES EN JAVA 
 
 public class HolaMundo {
 
