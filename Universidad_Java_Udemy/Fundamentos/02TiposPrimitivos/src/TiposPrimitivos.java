@@ -65,6 +65,45 @@ public class TiposPrimitivos {
         
         var numeroFlotante = 10.0F; //solo se puede indicar el tipo con una letra en Long(L), Float(D) Y Double(D)
         System.out.println("numeroFlotante = " + numeroFlotante);
-                
+        
+        /*
+        Primitivos tipo char
+        */
+        char miCaracter = 'a';//solo un caracter, se rige por la lista de caracteres unicode
+        System.out.println("miCaracter = " + miCaracter);
+        
+        char varChar = '\u0021'; //con barru podemos utilizar los valores unicode
+        System.out.println("varChar = " + varChar);
+        
+        char varCharDecimal = 33;//con el codigo decimal del caracter unicode
+        System.out.println("varCharDecimal = " + varCharDecimal);
+        
+        char varCharSimbolo = '!';//utilizando directamente el simbolo unicode
+        System.out.println("varCharSimbolo = " + varCharSimbolo);
+        
+        //con var
+        var varChar1 = '\u0021'; //con barru podemos utilizar los valores unicode
+        System.out.println("varChar1 = " + varChar1);
+        
+        var varCharDecimal1 = 33;//NO podempos asignar un valor decimal de caracter a un tipo var
+        System.out.println("varCharDecimal1 = " + varCharDecimal1);
+        
+        var varCharSimbolo1 = '!';//utilizando directamente el simbolo unicode
+        System.out.println("varCharSimbolo1 = " + varCharSimbolo1);
+        
+        int variableEnteraSimbolo = '!';//Cuando asignamos un char a tipo entero se convierte en codigo decimal
+        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
+        
+        int letra = 'a';
+        System.out.println("letra = " + letra);//se imprime el valor decimal 97 correspondiente a la letra a
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
