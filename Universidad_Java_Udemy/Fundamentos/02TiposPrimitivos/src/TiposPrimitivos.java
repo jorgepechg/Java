@@ -1,4 +1,7 @@
 
+import java.util.Scanner;
+
+
 public class TiposPrimitivos {
     
     public static void main(String args[]) {
@@ -97,6 +100,55 @@ public class TiposPrimitivos {
         int letra = 'a';
         System.out.println("letra = " + letra);//se imprime el valor decimal 97 correspondiente a la letra a
         
+        /*
+        Primitivos tipo boolean
+        */
+        
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
+        
+        if(varBoolean){
+            System.out.println("La bandera es verdadera");
+        }else{
+            System.out.println("La bandera es falsa");
+        }
+        
+        var edad = 30;
+        var esAdulto = edad >= 18;
+        if(esAdulto){
+            System.out.println("Eres mayor de edad");
+        }else{
+            System.out.println("Eres menor de edad");
+        }
+        
+        /*
+        Conversión de tipos primitivos
+        */
+        //Convertir tipo string a tipo int
+        var edad1 = Integer.parseInt("20"); //metodo parseint recibe el valor de una cadena y lo convierte a int
+        System.out.println("edad = " + (edad1 + 1));
+        
+        //convertir tipo string a tipo double
+        var valorPi = Double.parseDouble("3.1416");
+        System.out.println("valorPi = " + valorPi);
+        
+//        //pedir un valor
+        Scanner consola = new Scanner(System.in);//creamos una variable consola y le asignamos un objeto escaner
+        System.out.println("Proporciona tu edad:");//Escribimos en pantalla las indicaciones para el usuario
+        edad = Integer.parseInt( consola.nextLine() );//asignamos el valor escrito en consola a la variable
+        System.out.println("edad = " + edad);
+        
+        //convertir integer a string
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+        
+        //convertir string a char
+        var caracter = "hola".charAt(0);//usamos el metodo charat para seleccionar un indice de los caracteres la cadena
+        System.out.println("caracter = " + caracter);
+        
+        System.out.println("Proporciona un caracter:");
+        caracter = consola.nextLine().charAt(0);//el metodo nextline recupera strings, con charat escogemos un caracter de ese string
+        System.out.println("caracter = " + caracter);
         
         
         
